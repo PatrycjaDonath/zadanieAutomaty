@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 43.599 sec <<< FAILURE!
+microsoftSearchBarFunctionalityTest(FirstScenarioTest)  Time elapsed: 23.608 sec  <<< FAILURE!
+java.lang.AssertionError: The SearchBar did not contain expected value expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at FirstScenarioTest.searchInMicrosoftAndVerifyResults(FirstScenarioTest.java:62)
+	at FirstScenarioTest.microsoftSearchBarFunctionalityTest(FirstScenarioTest.java:26)
+
+microsoftSearchBarVisibilityTest(FirstScenarioTest)  Time elapsed: 3.629 sec  <<< FAILURE!
+java.lang.AssertionError: The results were not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at FirstScenarioTest.verifyIfResultFound(FirstScenarioTest.java:40)
+	at FirstScenarioTest.microsoftSearchBarVisibilityTest(FirstScenarioTest.java:17)
+
